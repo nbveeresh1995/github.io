@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Wedding Invitation</title>
+    
+    <!-- Latest Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+     <!-- Welcome Overlay -->
+  <div id="welcome-screen" class="fixed inset-0 bg-pink-100 flex items-center justify-center z-50 transition-opacity duration-1000">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-6xl font-semibold mb-4 text-orange-800">Kamarthi Family wedding invitation<br><br></h1>
+      <h2 class="text-3xl md:text-5xl font-semibold mb-8 text-pink-800">Neeraja</h2>
+      <h3 class="text-3xl md:text-5xl font-semibold mb-8 text-orange-600">weds</h3>
+      <h4 class="text-3xl md:text-5xl font-semibold mb-8 text-pink-800">Vinod Kumar</h4>
+
+      <button id="enter-btn" class="bg-pink-600 hover:bg-green-700 text-white px-6 py-3 rounded-full text-xl shadow-lg">
+        Enter Invitation
+      </button>
+    </div>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" loop>
+    <source src="Song.mp3" type="audio/mpeg">
+  </audio>
+<div id="total-web">
+<div>
+    <div class="hearts-container">
+        <nav class="navbar">
+          <div class="logo">Wedding Invitation</div>
+      
+          <!-- Hamburger Icon -->
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+      
+          <!-- Navigation Links -->
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#couple"><i class="fa-solid fa-heart"></i> Couple</a></li>
+            <li><a href="#story"><i class="fa-solid fa-calendar-days"></i> Story</a></li>
+            <li><a href="#Events"><i class="fa-solid fa-calendar"></i> Events</a></li>
+            <li><a href="#gallery"><i class="fa-solid fa-image"></i> Gallery</a></li>
+            <li><a href="#location"><i class="fa-solid fa-location-dot"></i> Location</a></li>
+          </ul>
+        </nav>
+    </div>
+      
+
+    <!-- ***************************invitation******************************** -->
+    <section id="invitation">
+    <section class="invitation">
+        <div class="invitation-image">
+            <img src="ganesh.png" alt="God Img">
+        </div>
+        <h1 class="couple-name"> Neeraja <br> <span>💖</span> <br> Vinod Kumar </h1>
+        <p class="invitation-text"><br><br>
+           <U><I>" Together with our families, we request the pleasure of your company as we begin our beautiful journey as husband and wife! "</I></U>
+        </p>
+    </section>
+    </section>
+
+<div class="section-divider">
+    <hr>
+</div>
+
+    
+<!--************************** couple **************************-->
+<section id="couple">
+   
+    <div class="container"><br><br>
+        <h1 class="title">Wedding Couple</h1>
+
+        <div class="couple-section">
+            <div class="profile">
+                <h2>Neeraja</h2><br>
+                <p><em>A Beautiful woman with a fine prospect of happiness behind her. There is something magical about becoming the bride. There is something special about the commitment of spending the eternity with the man she loves</em> </p>
+            </div>
+
+            <div class="images">
+                <img src="neeru23.jpeg" alt="Bride img" class="circle-img">
+                <div class="heart-symbol">❤️</div>
+                
+                <div class="person-img">   
+                <img src="vinod4.jpeg" alt="Groom img" class="circle-img">
+                </div>
+            </div>
+              
+            <div class="profile">
+                <h2>Vinod Kumar</h2><br>
+                <p><em>A Charismatic young man who always smiles proudly because he is convinced that he has accomplished something quite wonderful by persuading the woman of his dreams to marry him</em> </p>
+            </div>
+        </div>
+
+        <h2 class="countdown-title">Wedding Countdown</h2>
+        <div class="countdown">
+            <div class="countdown-item"><span>34</span>DAYS</div>
+            <div class="countdown-item"><span>16</span>HOURS</div>
+            <div class="countdown-item"><span>28</span>MINUTES</div>
+            <div class="countdown-item"><span>5</span>SECONDS</div>
+        </div>
+    </div>
+
+<!-- Divider Between Sections -->
+<div class="section-divider">
+    <hr>
+</div>
+
+</section>
+<!-- ********************************Story************************************** -->
+<section id="story"><br>
+    <h2 class="story-title">Our Story<span>💘</span></h2>
+    <p class="story-intro"><i>Once in a while, right in the middle of an ordinary life, love gives us a fairy tale.</i></p>
+    
+    <div class="timeline">
+        
+        <div class="timeline-line"></div> <!-- Vertical Line -->
+
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>First We Met</h3>
+                <p class="date">Sun, Feb 16, 2025</p>
+                <p>It was fate. It was love at first sight. If we could only control the time, We would go back to the moment when we both first met, not to change anything, but to experience it all over again!</p>
+            </div>
+            
+            <div class="timeline-icon">
+                
+                 <img src="firsttime.jpg" alt="First Meet">
+              
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="timeline-icon">
+                <img src="Engagement.jpg" alt="Engagement">
+            </div>
+            <div class="timeline-content">
+                <h3>Engagement</h3>
+                <p class="date">Fri, Apr 4, 2025</p>
+                <p>Some knots are meant to be tied forever. Here is our sweet and smooth journey towards eternity holding each other's hand. Two souls but a single thought; two hearts that started beating as one.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="timeline-content">
+                <h3>Wedding</h3>
+                <p class="date">Sun, May 4, 2025</p>
+                <p>The best part of the life is spending each and every day with the fiance, Going on a date, shopping your wedding dress, preparing your wedding vows with the excitement and eagerness of waiting for the big day!</p>
+            </div>
+            <div class="timeline-icon">
+                <img src="Wedding.jpg" alt="Wedding">
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- Divider Between Sections -->
+<div class="section-divider">
+    <hr>
+</div>   
+
+<!-- -------------------------------------Events ------------------------------------>
+
+<section id="Events" class="events">
+    <h2 class="Events-title">Main Events</h2>
+    <br><br>
+    <div class="events-container">
+      <!-- Wedding Card -->
+      <div class="event-card">
+        <h3>Wedding</h3>
+        <hr>
+        <div class="event-details">
+          <div class="event-time">
+            <i class="fa-solid fa-clock"></i>
+            <span>06:45 AM - 07:45 AM</span>
+          </div>
+          <div class="event-date">
+            <i class="fa-solid fa-calendar"></i>
+            <span>Sun, May 4, 2025</span>
+          </div>
+        </div>
+        <div class="event-location">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Babu Function Hall <br>
+          Committi road <br>
+          Yemmiganur  518-360</span>
+        </div>
+      </div>
+  
+      <!-- Reception Card -->
+      <div class="event-card">
+        <h3>Reception</h3>
+        <hr>
+        <div class="event-details">
+          <div class="event-time">
+            <i class="fa-solid fa-clock"></i>
+            <span>11:00 AM  onwards</span>
+          </div>
+          <div class="event-date">
+            <i class="fa-solid fa-calendar"></i>
+            <span>Sun, May 4, 2025</span>
+          </div>
+        </div>
+        <div class="event-location">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Babu Function Hall <br>
+              Committi road <br>
+              Yemmiganur  518-360</span>
+            </div>
+      </div>
+    </div>
+  </section>
+  
+    </div>
+</section>
+ <!-- Divider Between Sections -->
+ <div class="section-divider">
+    <hr>
+</div> 
+<!-- **************************************Gallery******************************************* -->
+<section id="gallery">
+    <h2 class="Gallery-title">Photo Gallery</h2>
+    <br><br>
+    <p class="gallery-intro">
+        From this day forward, you shall not walk alone. My heart will be your Shelter, And my arms will be your Home...
+    </p>
+    <div class="gallery-container">
+        <!-- <div class="gallery-item">
+            <img src="myfamilyjpg" alt="Bride family img">
+            <div class="overlay">
+                <h3>Smt Kamarthi Padmavathi & Shri. Kamarthi Venkatesh(Bank employee)</h3>
+        
+                <p> Neeraja's parents</p>
+            </div>
+        </div> -->
+        <div class="gallery-item">
+            <img src="neeru2.jpeg" alt="Bride jpg">
+            <div class="overlay">
+                <h3>Neeraja Kamarthi</h3>
+                <p>Software Engineer</p>
+                <p>D/o. Smt Kamarthi Padmavathi & Shri. Kamarthi Venkatesh(Bank employee, Ygr.)</p>
+            </div>
+        </div>
+        <!-- <div class="gallery-item">
+            <img src="CB jpg" alt="Couple img">
+            <div class="overlay">
+                <h3>Neeraja & Vinod Kumar</h3>
+                <p>Beautiful Wedding coming soon...</p>
+            </div>
+        </div> -->
+        <div class="gallery-item">
+            <img src="vinod5.jpeg" alt="Groom img">
+            <div class="overlay">
+                <h3>Vinod Kumar Madugundu</h3>
+                <p>Software Engineer</p>
+                <p>S/O Smt Madugundu Taradevi & Shri. Madugundu Govindarajulu (Ganesh Photo Studio, Ygr.)</p>
+            </div>
+        </div>
+        <!-- <div class="gallery-item">
+            <img src="our jpg" alt="Groom family">
+            <div class="overlay">
+                <h3>Smt Madugundu Taradevi & Shri. Madugundu Govindarajulu</h3>
+                <p>Vinod Kumar's parents</p>
+            </div>
+        </div> -->
+       
+    </div>
+</section>
+<!-- Divider Between Sections -->
+<div class="section-divider">
+    <hr>
+</div> 
+<!-- /* ************************Wedding Location******************************** */ -->
+
+<section id="location">
+    <h2 class="Wedding-title">Wedding Location</h2>
+    <br><br>
+    <p class="location-info">To join us in celebrating our special day at the venue below location.</p>
+    
+    <div class="map-container">
+        <iframe  
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d846.1596731703557!2d77.4736268809304!3d15.772807447456987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb6416d74c98525%3A0x1ada0045c3ca974a!2sBabu%20Function%20Hall!5e1!3m2!1sen!2sus!4v1745696902768!5m2!1sen!2sus"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+    
+
+    </div>
+</section> 
+
+</div>
+
+<!-- *********************************Footer************************ -->
+<footer class="footer">
+    <p>© 2025 Copyright: <a href="https://www.linkedin.com/in/veeresh-nb-71b2a3131/" target="_blank" >Veeresh NB</a></p>
+    
+    <div class="footer-icons">
+        <a href="mailto:nbveeresh1995@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/veeresh-nb-71b2a3131/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/nbveeresh.nbveeresh/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/veeresh.nb/#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Visitor Counter</title>
+</head>
+<body>
+    <div class="website-counter">
+        Website Visitor Counter: <span id="count">0</span>
+    </div>
+    <!-- <button id="reset">Reset Counter</button> -->
+    <script>
+        var counterContainer = document.getElementById("count");
+        var resetButton = document.getElementById("reset");
+        var visitCount = localStorage.getItem("page_view");
+
+        if (visitCount) {
+            visitCount = Number(visitCount) + 1;
+            localStorage.setItem("page_view", visitCount);
+        } else {
+            visitCount = 1;
+            localStorage.setItem("page_view", 1);
+        }
+
+        counterContainer.innerText = visitCount;
+
+        resetButton.addEventListener("click", () => {
+            visitCount = 1;
+            localStorage.setItem("page_view", 1);
+            counterContainer.innerText = visitCount;
+        })
+        ;
+    </script>
+</body>
+</html>
+</footer>
+
+ </div>
+<!-- Outside the main site wrapper -->
+<div id="falling-hearts-container"></div>
+
+ <script src="script.js"></script>
+</body>
+</html>
